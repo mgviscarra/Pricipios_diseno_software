@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Open_Close.iml" filepath="$PROJECT_DIR$/Open_Close.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Interfaz_Segregation.iml" filepath="$PROJECT_DIR$/Interfaz_Segregation.iml" />
     </modules>
   </component>
 </project>
