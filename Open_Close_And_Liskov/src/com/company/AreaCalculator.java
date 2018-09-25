@@ -1,7 +1,12 @@
 package com.company;
 
 public class AreaCalculator {
-    public static void calculate(Shape shape){
-        System.out.println(String.format("The area of the %s, is: %s", shape.getClass().getSimpleName(), shape.calculateArea()));
+    /**
+     * Given a shape, it calculates its area
+     * @param shape
+     */
+    public static void calculateArea(Shape shape){
+        System.out.println(String.format("The area of the %s, is: %s", shape.getClass().getSimpleName(),
+                shape.calculateArea()));
     }
 }

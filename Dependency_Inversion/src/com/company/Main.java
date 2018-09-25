@@ -3,14 +3,14 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        Switcheable fan = new Fan();
+        Switchable fan = new Fan();
         Switch fanSwitch = new ElectricPowerSwitch(fan);
-        fanSwitch.press();
-        fanSwitch.press();
+        fanSwitch.pressSwitch();
+        fanSwitch.pressSwitch();
 
-        Switcheable bulb = new LightBulb();
+        Switchable bulb = new LightBulb();
         Switch bulbSwitch = new ElectricPowerSwitch(bulb);
-        bulbSwitch.press();
-        bulbSwitch.press();
+        bulbSwitch.pressSwitch();
+        bulbSwitch.pressSwitch();
     }
 }

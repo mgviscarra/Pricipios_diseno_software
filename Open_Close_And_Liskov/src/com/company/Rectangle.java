@@ -10,6 +10,10 @@ public class Rectangle implements Shape {
         this.width = width;
     }
 
+    /**
+     * Calculates the rectangle area
+     * @return the calculated area
+     */
     @Override
     public double calculateArea() {
         return length *width;

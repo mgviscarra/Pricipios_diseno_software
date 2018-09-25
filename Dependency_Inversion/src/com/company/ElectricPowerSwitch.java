@@ -1,27 +1,35 @@
 package com.company;
 
 public class ElectricPowerSwitch implements Switch {
-    public Switcheable client;
-    public boolean on;
+    public Switchable client;
+    public boolean isSwitchOn;
 
-    public ElectricPowerSwitch(Switcheable client){
+    public ElectricPowerSwitch(Switchable client){
         this.client=client;
-        this.on = false;
-    }
-    @Override
-    public boolean isOn() {
-        return this.on;
+        this.isSwitchOn = false;
     }
 
+    /**
+     * Verifies if the switch is on or off
+     * @return true or false
+     */
     @Override
-    public void press() {
-        boolean checkOn = isOn();
+    public boolean isSwitchOn() {
+        return this.isSwitchOn;
+    }
+
+    /**
+     * Presses the switch to turn on or off
+     */
+    @Override
+    public void pressSwitch() {
+        boolean checkOn = isSwitchOn();
         if(checkOn){
-            client.turnOff();
-            this.on = false;
+            client.turnSwitchOff();
+            this.isSwitchOn = false;
         } else{
-            client.turnOn();
-            this.on = true;
+            client.turnSwitchOn();
+            this.isSwitchOn = true;
         }
     }
 }
